@@ -5,6 +5,31 @@ var phrases = map[string][]string{
     // keywords and responses
     `hello`: {
         "Hello How are you feeling?",   
+
+    },
+    `sad`: {
+        "Why are you sad?",
+        "What's making you sad?",
+        "Tell me more about why your sad?",
+    },
+   
+    `today`: {
+        "Tell me more about today",
+        "What happened today?",
+    },
+    `father`: {
+        "Tell about your father?",
+    },
+    `mother`: {
+        "tell me about your Mother?",
+        
+    },
+    `family`: {
+        "If I mention your family, how does that make you feel?",
+    },
+    `happy`: {
+        "Why are you happy?",
+        "I'm glad you're happy but what made you happy?",
     },
 }  
 
