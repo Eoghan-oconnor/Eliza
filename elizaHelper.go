@@ -67,12 +67,12 @@ func reflect(fragment string) string {
     return strings.Join(words, " ")
 }
 
-// PostProcess function loops threw the Synonymizer to 'dumb down' words that are similar
+// PostProcess function loops threw the Similar to 'dumb down' words that are similar
 // This wwill make the bot look and feel more intellegent, giving it an illusion of understanding
 func PostProcess(parsed []string) (input []string) {
 
 	search := make(map[string]string)
-	for key, list := range Synonymizer {
+	for key, list := range Similar {
 		for _, word := range list {
 			search[word] = key
 		}
