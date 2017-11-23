@@ -4,25 +4,27 @@
     <meta name="viewport">
     <title>Eliza Chatbot</title>
     <html lang="en"></html>
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/css/bootstrap.min.css" integrity="sha384-PsH8R72JQ3SOdhVi3uxftmaW6Vc51MKb0q5P2rRUpPvrszuE4W1povHYgTpBfshb" crossorigin="anonymous">
     
 </head>
 
 <body>
 
     <h2>Eliza</h2>
-    <div class = "Chat">
-        <div style="padding-bottom: 5%">
-            <p id="output"></p>   
-        </div>
+    <div style="padding-bottom: 5%">
+          <p id="output"></p>   
+    </div>
 
+    <div class = "container fixed-bottom">
         <form>
-                <input id="userInput" class="inputBox"></input>
+            <input id="userInput" align="bottom" class="inputBox"></input>
         </form>
     </div>
 
 </body>
 <!-- imports -->
-<link rel="stylesheet" href="style.css">
 <script src="https://code.jquery.com/jquery-3.1.0.min.js"></script>
 <script src="script.js"></script>
     <style>
@@ -41,14 +43,25 @@
         font-size:125%;
     }
     body {
-        /*background-color: lightblue;*/
         background-image: url("images/images.jpg");
+        background-repeat: no-repeat;   
         background-position: left;
         height:auto;
         width:auto;
         background-size: cover; 
     }
+    body, html{ 
+        height:100%;
+    }
+    input{
+        width: 100%;
+        padding: 12px 100px;
+        margin: 8px 0;
+        box-sizing: border-box;
+        align-content: bottom;
+        /* padding-top:100px; */
 
+    }   
 
     </style>
 </html>
