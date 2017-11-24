@@ -17,5 +17,7 @@ Step 4: Once the repo has downloaded locate the file and open a terminal or cmd 
 ```
 go build eliza.go
 ```
+Step 5: The above command will create an excutable that will run the program.
+
 
  
