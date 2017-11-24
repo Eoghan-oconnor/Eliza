@@ -17,12 +17,12 @@ input.keypress(function(e){
     input.val("");
 
     const user = {"input" : userInput }
-    ouputText.append( "<p class=\"reply\">" + "<b class=\"userName\">User: </b>" + userInput + "</p>");
+    ouputText.append( "<p>" + "<b>User: </b>" + userInput + "</p>");
      
     $.get("/elizaPrompt", user)
         .done(response => {
             //creating the output
-            const output = "<p class=\"reply\">" + "<b class=\"userName\">Eliza: </b>" + response + "</p>";
+            const output = "<p>" + "<b>Eliza: </b>" + response + "</p>";
 
             //Eliza responses are outputted to the webpage 
             setTimeout(function(){ouputText.append(output)});
